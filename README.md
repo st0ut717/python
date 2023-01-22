@@ -1,2 +1,2 @@
 # python
-a place for my personal python improvment
+a place for my personal python improvement
