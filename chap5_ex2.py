@@ -8,25 +8,25 @@
 # show min
 # show max
 # 
-max = 0 
-min = 0 
+max = None
+min = None 
 while True:
-    print('type done when done')
     line = input('Gimme a number: ')
     if (line) == "done":
             break
     try:
         x = int(line)
     except:
-        print('Thats not a number')
-    if max == 0:
+        print('Invalid input')
+    if max is None:
         max = x
-    if min == 0:
+    if min is None:
         min = x
+        continue
     if x >= (max):
         max = x
     if x <= (min):
         min = x
     
-print('minimum value entered: ', (min))
-print('maximum value entered: ', (max))
+print('Maximum is', (max))
+print('Minimum is', (min))

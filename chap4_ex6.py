@@ -14,7 +14,7 @@ def computepay(hours, rate):
         over_hours = (hours) - (max_hour)
         ot_rate = ((rate) * 1.5) * (over_hours)
         tot_pay = (pay_for_hours) + (ot_rate)
-        print(tot_pay)
+        print("Pay", tot_pay)
 # Get users input
 # hours
 def hoursworked():
@@ -24,7 +24,6 @@ def hoursworked():
     except:
         print("How about you try this with an actual number?")
         hours()
-    print(hours)
     return hours
 #
 # rate
